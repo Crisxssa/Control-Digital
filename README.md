@@ -6,6 +6,8 @@ Ademas vimos el test de jury y la forma de comprobar la estabilidad con este met
 >🔑Estabilidad absoluta: Es estable cuando se tiene una salida limitada producto de una entrada limitada.
 
 >🔑Espacio de LaPalece: Ubicaion de los polos, para el caso de un tiempon continuo, se habla de estabilidad al encontrarse todos los polos en el emisferio izquierdo (figura 1).
+
+>🔑Espacio de Z: Ubicaion de los polos, para el caso de un tiempon discreto, se habla de estabilidad al encontrarse todos los polos dentro del circulo unitario (figura 2).
  
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
 
@@ -52,6 +54,10 @@ Después escribimos, dentro de los paréntesis, la ubicación del archivo (ya se
 <img src="https://github.com/user-attachments/assets/82230ecf-2b59-4650-96b3-fb1a859ed5e7" width="400" height="400"> 
 
 Figura 1. Plano de estabilidad(tiempo continuo)
+
+<img src="https://github.com/user-attachments/assets/8e2e79d0-eeac-4ff6-863d-02ffe018c3aa" width="400" height="400"> 
+
+Figura 2. Plano de estabilidad(tiempo discreto)
 
 Incluya la respectiva etiqueta a modo de descripción de la figura y mantenga numeración consecutiva para todas las figuras de la clase.
 

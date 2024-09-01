@@ -1,8 +1,8 @@
 # <center> LCD </center>
 
-##title
+## title
 
-###<center> GRANT </center>
+### <center> GRANT </center>
 **Estabilidad en sistemas discretos**
 1.Estabilidad en sistemas discretos
 Para esta clase se empezara a ver la estabilidad tanto en la funcion de LaPlace como en funcion de Z, observando la ubicacion de los polos circulo unitario (Z) como en el emisferio izquierdo.

@@ -12,8 +12,9 @@ Ademas vimos el test de jury y la forma de comprobar la estabilidad con este met
 
 💡Ejemplo 1. Por ubicacion de polos\
 Se tiene el sistema <a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=G\left( z \right) =  \frac{4}{z^{4}-7.8z^{2}+12.4z+3}"><img src="http://www.alciro.org/cgi/tex.cgi?G\left( z \right) =  \frac{4}{z^{4}-7.8z^{2}+12.4z+3}" title="G\left( z \right) =  \frac{4}{z^{4}-7.8z^{2}+12.4z+3}" border="0" /></a>\
-Evaluando la estabilidadd conn MATLAB (pzmpa("nombre de la variable")) al polinomio caracteristico (denominador)\
-Se obtiene los polos <a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=z= 5, z=3, z=0.2"><img src="http://www.alciro.org/cgi/tex.cgi?z= 5, z=3, z=0.2" title="z= 5, z=3, z=0.2" border="0" /></a> (inestable por estar fuera del circulo unitario)
+Evaluando la estabilidadd conn MATLAB {pzmap("nombre de la variable"))} al polinomio caracteristico (denominador)\
+Se obtiene los polos <a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=z= 5, z=3, z=0.2"><img src="http://www.alciro.org/cgi/tex.cgi?z= 5, z=3, z=0.2" title="z= 5, z=3, z=0.2" border="0" /></a> (inestable por estar fuera del circulo unitario)\
+Se comprueba con el codigo root ("nombre de la variable") en MATLAB
 
 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.

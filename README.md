@@ -9,15 +9,9 @@ Ademas vimos el test de jury y la forma de comprobar la estabilidad con este met
 >1.1.2.🔑Espacio de Z: Ubicaion de los polos, para el caso de un tiempon discreto, se habla de estabilidad al encontrarse todos los polos dentro del circulo unitario (figura 2).
 
 >1.2.🔑Test de Jury: Comprobacion matematica en base al denominador de funcion de transferencia en tiempo discreto (figura 3).
- 
-3. Subsecciones
-Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R.
 
-3.1. Título de subsecciones
-Para la creación de estas subsecciones debe utilizar un tamaño de letra más pequeño, por lo tanto utilice la etiqueta '###'
-
-3.2. Numeración de subsecciones
-Siga la numeración de la sección seguida de un punto y luego el número de la subsección.
+💡Ejemplo 1. Por ubicacion de polos /n
+se tiene el sistema 
 
 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
@@ -45,7 +39,7 @@ Después escribimos, dentro de los corchetes, el texto alternativo. Este es opci
 Después escribimos, dentro de los paréntesis, la ubicación del archivo (ya sea una url o una ubicación dentro de algun folder local). Se recomienda poner las imágenes en una carpeta que se llame imágenes dentro del repositorio github para que no tengan problemas al cargar las imágenes.
 💡Ejemplo 2:
 
-$$ <img src="https://github.com/user-attachments/assets/82230ecf-2b59-4650-96b3-fb1a859ed5e7" width="400" height="400"> $$
+<img src="https://github.com/user-attachments/assets/82230ecf-2b59-4650-96b3-fb1a859ed5e7" width="400" height="400">
 
 $$Figura 1. Plano de estabilidad(tiempo continuo)$$
 

@@ -49,8 +49,7 @@ Después escribimos, dentro de los corchetes, el texto alternativo. Este es opci
 Después escribimos, dentro de los paréntesis, la ubicación del archivo (ya sea una url o una ubicación dentro de algun folder local). Se recomienda poner las imágenes en una carpeta que se llame imágenes dentro del repositorio github para que no tengan problemas al cargar las imágenes.
 💡Ejemplo 2:
 
-![image](https://github.com/user-attachments/assets/24155b70-2e22-4fe6-aafc-8e96740281d0)
-<img src="https://github.com/user-attachments/assets/24155b70-2e22-4fe6-aafc-8e96740281d0" width="100" height="100">
+<img src="https://github.com/user-attachments/assets/24155b70-2e22-4fe6-aafc-8e96740281d0" width="250" height="250">
 
 Figura 1. Plano de estabilidad(tiempo continuo)
 

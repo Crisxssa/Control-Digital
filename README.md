@@ -6,11 +6,14 @@ Ademas vimos el test de jury y la forma de comprobar la estabilidad con este met
 > ## 1.1.🔑 Estabilidad absoluta:
 > Es estable cuando se tiene una salida limitada producto de una entrada limitada.
 
->1.1.1.🔑Espacio de LaPalece: Ubicaion de los polos, para el caso de un tiempon continuo, se habla de estabilidad al encontrarse todos los polos en el emisferio izquierdo (figura 1).
+>## 1.1.1.🔑Espacio de LaPalece:
+>Ubicaion de los polos, para el caso de un tiempon continuo, se habla de estabilidad al encontrarse todos los polos en el emisferio izquierdo (figura 1).
 
->1.1.2.🔑Espacio de Z: Ubicaion de los polos, para el caso de un tiempon discreto, se habla de estabilidad al encontrarse todos los polos dentro del circulo unitario (figura 2).
+>## 1.1.2.🔑Espacio de Z:
+>Ubicaion de los polos, para el caso de un tiempon discreto, se habla de estabilidad al encontrarse todos los polos dentro del circulo unitario (figura 2).
 
->1.2.🔑Test de Jury: Comprobacion matematica en base al denominador de funcion de transferencia en tiempo discreto (figura 3).
+>## 1.2.🔑Test de Jury:
+>Comprobacion matematica en base al denominador de funcion de transferencia en tiempo discreto (figura 3).
 
 💡Ejemplo 1. Por ubicacion de polos\
 Se tiene el sistema <a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=G\left( z \right) =  \frac{4}{z^{4}-7.8z^{2}+12.4z+3}"><img src="http://www.alciro.org/cgi/tex.cgi?G\left( z \right) =  \frac{4}{z^{4}-7.8z^{2}+12.4z+3}" title="G\left( z \right) =  \frac{4}{z^{4}-7.8z^{2}+12.4z+3}" border="0" /></a>\

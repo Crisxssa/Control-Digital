@@ -2,13 +2,13 @@
 Para esta clase se empezara a ver la estabilidad tanto en la funcion de LaPlace como en funcion de Z, observando la ubicacion de los polos circulo unitario (Z) como en el emisferio izquierdo.
 Ademas vimos el test de jury y la forma de comprobar la estabilidad con este metodo
 
-###>1.1🔑Estabilidad absoluta: Es estable cuando se tiene una salida limitada producto de una entrada limitada.
+>1.1.🔑Estabilidad absoluta: Es estable cuando se tiene una salida limitada producto de una entrada limitada.
 
->1.1.1🔑Espacio de LaPalece: Ubicaion de los polos, para el caso de un tiempon continuo, se habla de estabilidad al encontrarse todos los polos en el emisferio izquierdo (figura 1).
+>1.1.1.🔑Espacio de LaPalece: Ubicaion de los polos, para el caso de un tiempon continuo, se habla de estabilidad al encontrarse todos los polos en el emisferio izquierdo (figura 1).
 
->1.1.2🔑Espacio de Z: Ubicaion de los polos, para el caso de un tiempon discreto, se habla de estabilidad al encontrarse todos los polos dentro del circulo unitario (figura 2).
+>1.1.2.🔑Espacio de Z: Ubicaion de los polos, para el caso de un tiempon discreto, se habla de estabilidad al encontrarse todos los polos dentro del circulo unitario (figura 2).
 
->1.2🔑Test de Jury: Comprobacion matematica en base al denominador de funcion de transferencia en tiempo discreto (figura 3).
+>1.2.🔑Test de Jury: Comprobacion matematica en base al denominador de funcion de transferencia en tiempo discreto (figura 3).
  
 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R.
@@ -47,15 +47,15 @@ Después escribimos, dentro de los paréntesis, la ubicación del archivo (ya se
 
 <img src="https://github.com/user-attachments/assets/82230ecf-2b59-4650-96b3-fb1a859ed5e7" width="400" height="400"> 
 
-Figura 1. Plano de estabilidad(tiempo continuo)
+$$Figura 1. Plano de estabilidad(tiempo continuo)$$
 
 <img src="https://github.com/user-attachments/assets/8e2e79d0-eeac-4ff6-863d-02ffe018c3aa" width="400" height="400"> 
 
-Figura 2. Plano de estabilidad(tiempo discreto)
+$$Figura 2. Plano de estabilidad(tiempo discreto)$$
 
 <img src="https://github.com/user-attachments/assets/57eb6c8a-21b6-4be3-878e-8580416e5c2b" width="400" height="300">
 
-Figura 3. Matriz Test de JURY
+$$Figura 3. Matriz Test de JURY$$
 
 Incluya la respectiva etiqueta a modo de descripción de la figura y mantenga numeración consecutiva para todas las figuras de la clase.
 

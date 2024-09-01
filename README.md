@@ -61,7 +61,7 @@ Figura 1. Plano de estabilidad(tiempo continuo)
 
 Figura 2. Plano de estabilidad(tiempo discreto)
 
-<img src="https://github.com/user-attachments/assets/57eb6c8a-21b6-4be3-878e-8580416e5c2b" width="300" height="400">
+<img src="https://github.com/user-attachments/assets/57eb6c8a-21b6-4be3-878e-8580416e5c2b" width="400" height="300">
 
 Figura 3. Matriz Test de JURY
 

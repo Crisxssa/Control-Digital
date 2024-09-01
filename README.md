@@ -42,6 +42,7 @@ Después escribimos, dentro de los paréntesis, la ubicación del archivo (ya se
 <p align="center">
 <img src="https://github.com/user-attachments/assets/82230ecf-2b59-4650-96b3-fb1a859ed5e7" width="400" height="400">
 $$Figura 1. Plano de estabilidad(tiempo continuo)$$
+</p>
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/8e2e79d0-eeac-4ff6-863d-02ffe018c3aa" width="400" height="400">

@@ -3,8 +3,8 @@ Para esta clase se empezara a ver la estabilidad tanto en la funcion de LaPlace 
 Ademas vimos el test de jury y la forma de comprobar la estabilidad con este metodo
 
 1. Subtítulos
-🔑Estabilidad absoluta
->Es estable cuando se tiene una salida limitada producto de una entrada limitda
+>🔑Estabilidad absoluta
+Es estable cuando se tiene una salida limitada producto de una entrada limitda
 🔑Espacio de LaPalece
 >Ubicaion de los polos, para el caso de un tiempon continuo, se habla de estabilidad al encontrarse todos los polos en el emisferio izquierdo (figura 1) 
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla

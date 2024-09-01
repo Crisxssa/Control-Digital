@@ -42,16 +42,19 @@ Después escribimos, dentro de los paréntesis, la ubicación del archivo (ya se
 <p align="center">
 <img src="https://github.com/user-attachments/assets/82230ecf-2b59-4650-96b3-fb1a859ed5e7" width="400" height="400">
  </p>
+
 $$Figura 1. Plano de estabilidad(tiempo continuo)$$
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/8e2e79d0-eeac-4ff6-863d-02ffe018c3aa" width="400" height="400">
  </p>
+
 $$Figura 2. Plano de estabilidad(tiempo discreto)$$
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/57eb6c8a-21b6-4be3-878e-8580416e5c2b" width="400" height="300">
  </p>
+
 $$Figura 3. Matriz Test de JURY$$
 
 Incluya la respectiva etiqueta a modo de descripción de la figura y mantenga numeración consecutiva para todas las figuras de la clase.

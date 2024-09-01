@@ -2,7 +2,7 @@
 Para esta clase se empezara a ver la estabilidad tanto en la funcion de LaPlace como en funcion de Z, observando la ubicacion de los polos circulo unitario (Z) como en el emisferio izquierdo.
 Ademas vimos el test de jury y la forma de comprobar la estabilidad con este metodo
 
-###>1.1.###🔑Estabilidad absoluta: Es estable cuando se tiene una salida limitada producto de una entrada limitada.
+>1.1.🔑###Estabilidad absoluta###: Es estable cuando se tiene una salida limitada producto de una entrada limitada.
 
 >1.1.1.🔑Espacio de LaPalece: Ubicaion de los polos, para el caso de un tiempon continuo, se habla de estabilidad al encontrarse todos los polos en el emisferio izquierdo (figura 1).
 

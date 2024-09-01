@@ -8,6 +8,8 @@ Ademas vimos el test de jury y la forma de comprobar la estabilidad con este met
 >🔑Espacio de LaPalece: Ubicaion de los polos, para el caso de un tiempon continuo, se habla de estabilidad al encontrarse todos los polos en el emisferio izquierdo (figura 1).
 
 >🔑Espacio de Z: Ubicaion de los polos, para el caso de un tiempon discreto, se habla de estabilidad al encontrarse todos los polos dentro del circulo unitario (figura 2).
+
+>🔑Test de Jury: Comprobacion matematica en base al denominador de funcion de transferencia en tiempo discreto (figura 3).
  
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
 
@@ -58,6 +60,10 @@ Figura 1. Plano de estabilidad(tiempo continuo)
 <img src="https://github.com/user-attachments/assets/8e2e79d0-eeac-4ff6-863d-02ffe018c3aa" width="400" height="400"> 
 
 Figura 2. Plano de estabilidad(tiempo discreto)
+
+<img src="https://github.com/user-attachments/assets/57eb6c8a-21b6-4be3-878e-8580416e5c2b" width="400" height="400">
+
+Figura 3. Matriz Test de JURY
 
 Incluya la respectiva etiqueta a modo de descripción de la figura y mantenga numeración consecutiva para todas las figuras de la clase.
 

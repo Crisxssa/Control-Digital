@@ -10,7 +10,7 @@ Ademas vimos el test de jury y la forma de comprobar la estabilidad con este met
 
 >1.2.🔑Test de Jury: Comprobacion matematica en base al denominador de funcion de transferencia en tiempo discreto (figura 3).
 
-💡Ejemplo 1. Por ubicacion de polos /n
+💡Ejemplo 1. Por ubicacion de polos\
 se tiene el sistema 
 
 4. Ejemplos

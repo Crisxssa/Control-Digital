@@ -11,7 +11,9 @@ Ademas vimos el test de jury y la forma de comprobar la estabilidad con este met
 >1.2.🔑Test de Jury: Comprobacion matematica en base al denominador de funcion de transferencia en tiempo discreto (figura 3).
 
 💡Ejemplo 1. Por ubicacion de polos\
-Se tiene el sistema $<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=G\left( z \right) =  \frac{4}{z^{4}-7.8z^{2}+12.4z+3}"><img src="http://www.alciro.org/cgi/tex.cgi?G\left( z \right) =  \frac{4}{z^{4}-7.8z^{2}+12.4z+3}" title="G\left( z \right) =  \frac{4}{z^{4}-7.8z^{2}+12.4z+3}" border="0" /></a>$
+Se tiene el sistema 
+
+$<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=G\left( z \right) =  \frac{4}{z^{4}-7.8z^{2}+12.4z+3}"><img src="http://www.alciro.org/cgi/tex.cgi?G\left( z \right) =  \frac{4}{z^{4}-7.8z^{2}+12.4z+3}" title="G\left( z \right) =  \frac{4}{z^{4}-7.8z^{2}+12.4z+3}" border="0" /></a>$
 
 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.

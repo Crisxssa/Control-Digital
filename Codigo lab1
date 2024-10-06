@@ -1,0 +1,89 @@
+#include <avr/interrupt.h>  // Librería para manejar las interrupciones
+
+// Pines para los potenciómetros
+const int potA = A0;  // Potenciómetro para el factor de variación A
+const int potTs = A1;  // Potenciómetro para el tiempo de muestreo Ts
+
+// Parámetros de la onda
+const float B = 511.5;  // Amplitud base (ajustada a 10 bits: 511.5)
+const float f = 50;     // Frecuencia en Hz
+const float w = 2 * PI * f;  // Frecuencia angular
+
+const int numBits = 10;  // Resolución de 10 bits
+const int dacPins[numBits] = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11};  // Pines para DAC
+
+// Variables para tiempo y amplitud
+float A = 1.0;  // Factor de variación inicial
+volatile unsigned long Ts = 100;  // Tiempo de muestreo inicial en microsegundos
+volatile int k = 0;  // Variable de tiempo discreto para la onda
+
+void setup() {
+  // Configurar pines del DAC
+  for (int i = 0; i < numBits; i++) {
+    pinMode(dacPins[i], OUTPUT);
+  }
+  
+  // Configurar potenciómetros
+  pinMode(potA, INPUT);
+  pinMode(potTs, INPUT);
+  
+  // Configurar Timer1 para generar una interrupción periódica
+  cli();  // Deshabilitar interrupciones globales
+  TCCR1A = 0;  // Limpiar el registro de control A
+  TCCR1B = 0;  // Limpiar el registro de control B
+  TCNT1 = 0;   // Poner el contador en cero
+  
+  // Configurar el Timer1 en modo CTC (Clear Timer on Compare Match)
+  TCCR1B |= (1 << WGM12);  // Modo CTC
+  
+  // Establecer prescaler en 8 para mayor precisión
+  TCCR1B |= (1 << CS11);  // Prescaler de 8
+  
+  // Establecer el valor inicial del comparador para Ts
+  OCR1A = (Ts * 2);  // Ajustar OCR1A para microsegundos
+
+  // Habilitar la interrupción por comparación con el registro OCR1A
+  TIMSK1 |= (1 << OCIE1A);
+  
+  sei();  // Habilitar interrupciones globales
+}
+
+void loop() {
+  // Leer valores de los potenciómetros
+  A = analogRead(potA) / 1023.0;  // Ajustar A entre 0 y 1
+  
+  // Ajustar Ts con el potenciómetro dentro del rango adecuado
+  unsigned long newTs = map(analogRead(potTs), 0, 1023, 50, 500);  // Ajustar Ts entre 50 y 500 us
+  
+  // Actualizar el valor del comparador si ha cambiado
+  if (newTs != Ts) {
+    Ts = newTs;
+    OCR1A = (Ts * 2);  // Ajustar OCR1A según el nuevo Ts
+  }
+}
+
+// Interrupción que se dispara cuando el Timer1 coincide con OCR1A
+ISR(TIMER1_COMPA_vect) {
+  // Calcular el valor de la función y(k*Ts) = A * B * sin(w * k * Ts)
+  float t = k * (Ts / 1000000.0);  // Convertir Ts a segundos
+  float y = A * B * sin(w * t);
+  
+  // Convertir el valor de y a un valor de 10 bits
+  uint16_t dacValue = (uint16_t)(y + 511.5);  // Ajustar de [-B, B] a [0, 1023]
+  
+  // Enviar el valor al DAC
+  writeDAC(dacValue);
+  
+  // Avanzar k
+  k++;
+  if (k >= 256) {
+    k = 0;  // Reiniciar k después de un ciclo completo
+  }
+}
+
+// Función para escribir el valor en los pines del DAC
+void writeDAC(uint16_t value) {
+  for (int i = 0; i < numBits; i++) {
+    digitalWrite(dacPins[i], (value >> i) & 1);
+  }
+}

@@ -1,0 +1,43 @@
+// Declaración de variables
+double y[3] = {0, 0, 0};  // Almacenar y(k), y(k-1), y(k-2)
+double u[3] = {0, 0, 0};  // Almacenar u(k), u(k-1), u(k-2)
+const int buttonPin = 10; // Pin del pulsador
+unsigned long lastTime = 0;
+const float Ts = 100;    // Tiempo de muestreo en milisegundos
+
+// Pines para el DAC R-2R (8 pines digitales)
+const int dacPins[8] = {2, 3, 4, 5, 6, 7, 8, 9};  // Pines donde está conectado el DAC
+
+void setup() {
+  pinMode(buttonPin, INPUT);
+  // Configurar los pines del DAC como salidas
+  for (int i = 0; i < 8; i++) {
+    pinMode(dacPins[i], OUTPUT);
+  }
+}
+
+void loop() {
+  // Verificar si han pasado 100 ms (0.1 segundos)
+  if (millis() - lastTime >= Ts) {
+    lastTime = millis();
+
+    // Leer el estado del pulsador para simular el escalón unitario
+    u[2] = u[1];  // u(k-2)
+    u[1] = u[0];  // u(k-1)
+    u[0] = digitalRead(buttonPin);  // Entrada actual u(k), 0 o 1
+
+    // Aplicar la ecuación en diferencias
+    y[2] = y[1];  // y(k-2)
+    y[1] = y[0];  // y(k-1)
+    y[0] = 1.768 * y[1] - 0.7788 * y[2] + 0.0453 * u[1] + 0.043 * u[2];
+
+    // Escalar la salida para que esté en el rango de 0 a 255 (8 bits)
+    int outputValue = (int)(y[0] * 128);  // Cambia la escala para no duplicar la amplitud
+    outputValue = constrain(outputValue, 0, 255);  // Limitar el valor entre 0 y 255
+
+    // Enviar la salida a los pines del DAC R-2R
+    for (int i = 0; i < 8; i++) {
+      digitalWrite(dacPins[i], bitRead(outputValue, i));  // Escribir cada bit en los pines
+    }
+  }
+}
